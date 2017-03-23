@@ -17,9 +17,8 @@ var lastGuess = document.querySelector("#last-guess");
 var textAbove = document.querySelector("#text-above");
 var textBelow = document.querySelector("#text-below");
 
-// On page load state
+// On page load
 generateRandomNum(minNum, maxNum);
-enableButton(resetButton);
 minInput.value = minNum
 maxInput.value = maxNum
 textAbove.innerText = "Enter a number between " + minNum + " and " + maxNum + "."
@@ -73,6 +72,8 @@ resetButton.addEventListener("click", function() {
     resetAll()
   }
 })
+
+
 
 // Global Functions
 function checkGuess(guess, randomNum) {
@@ -186,19 +187,31 @@ function checkStatus() {
 
   if (guessInput == false || minNumInput == false || maxNumInput == false) {
     disableButton(guessButton);
+    alertTextOn()
     textBelow.innerText = "Alert: one or more inputs are not number(s)";
 
   } else if (minNum > maxNum) {
     textBelow.innerText = "Alert: please specify a correct min and max range";
+    alertTextOn()
     disableButton(guessButton);
 
   } else if (guess > maxNum || guess < minNum) {
     textBelow.innerText = "Alert: please make sure your guess is within the specified range";
+    alertTextOn()
     disableButton(guessButton);
 
   } else {
-    console.log("im in this function check status");
     textBelow.innerHTML = " ";
     enableButton(guessButton);
+    alertTextOff()
   }
+}
+
+
+function alertTextOn() {
+  textBelow.classList.add("alert")
+}
+
+function alertTextOff() {
+  textBelow.classList.remove("alert")
 }

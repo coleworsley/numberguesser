@@ -102,7 +102,7 @@ section {
 }
 
 
-/*Button States*/
+/*changed states*/
 .disabled {
   background-color: #D0D2D3;
   pointer-events: none;
@@ -118,4 +118,10 @@ input:focus, button:focus {
 
 .enabled:hover {
   background: #ED458B;
+}
+
+.alert {
+  color: #ED458B;
+  font-weight: 700;
+
 }
