@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <title>Number Guesser</title>
+</head>
+
+<body>
+
+  <header>
+    <h1><span>Number</span> Guesser</h1>
+  </header>
+
+  <main>
+    <input type="text" placeholder="Enter your guess" id="input" name="number">
+    <div class="min-max">
+      <label for="minLabel">Min:</label>
+      <input type="text" placeholder="Minimum" name="minLabel" id="min-input">
+      <label for="maxLabel">Max:</label>
+      <input type="text" placeholder="Maximum" name="maxLabel" id="max-input">
+    </div>
+
+    <div class="guess-clear">
+      <button type="button" name="guess" id="guess" class="disabled">Guess</button>
+      <button type="button" name="clear" id="clear" class="disabled">Clear</button>
+    </div>
+
+  </main>
+
+  <section class="result">
+    <p id="text-above">Enter your guess in the text box</p>
+    <p id="last-guess">_</p>
+    <p id="text-below">&nbsp</p>
+  </section>
+
+  <button type="button" name="reset" id="reset" class="disabled">Reset</button>
+
+  <script type="text/javascript" , src="app.js"></script>
+</body>
+
+</html>

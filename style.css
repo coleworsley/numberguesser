@@ -1,0 +1,121 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+}
+
+header {
+  background: #404041;
+}
+
+h1 span {
+  color: #ED458B;
+  font-weight: 700;
+}
+
+h1 {
+  color: #E6E7E8;
+  padding: 20px;
+  text-align: center;
+  font-size: 60px;
+}
+
+#input, button, .min-max input {
+  font-size: inherit;
+  font-weight: inherit;
+  font-family: inherit;
+}
+
+#input {
+  display: block;
+  width: 450px;
+  margin: 30px auto 10px;
+  padding: 5px 10px;
+  font-size: 25px;
+  border: solid 2px #D0D2D3;
+}
+
+.min-max {
+  margin: 0px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  width: 450px;
+  align-items: center;
+}
+
+.min-max label {
+  color: #ED458B;
+  font-size: 20px;
+}
+
+#min-input, #max-input {
+  font-size: 20px;
+  padding: 3px 7px;
+  font-weight: inherit;
+  font-family: inherit;
+  width: 38%;
+}
+
+input::-webkit-input-placeholder {
+  color: #D0D2D3;
+}
+
+.guess-clear {
+  width: 450px;
+  margin: auto;
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  width: 200px;
+  border-radius: 25px;
+  border: 0px;
+  margin: 10px auto;
+  color: #FFFFFF;
+  line-height: normal;
+}
+
+section {
+  margin: 20px;
+}
+
+#last-guess {
+  font-size: 200px;
+  color: #ED458B;
+}
+
+#text-below {
+  margin-top: 15px;
+  height: 50px;
+}
+
+#reset {
+  margin-top: 10px;
+  width: 400px;
+}
+
+
+/*Button States*/
+.disabled {
+  background-color: #D0D2D3;
+  pointer-events: none;
+}
+
+.enabled {
+  background-color: #929497;
+}
+
+input:focus, button:focus {
+  outline: none;
+}
+
+.enabled:hover {
+  background: #ED458B;
+}
