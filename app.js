@@ -202,7 +202,9 @@ function checkStatus() {
 
   } else {
     console.log("lastGuess is " + lastGuess.innerText)
-    if (parseNum(lastGuess.innerText) < randomNum) {
+    if (tries == 0) {
+      textBelow.innerText = " "
+    } else if (parseNum(lastGuess.innerText) < randomNum) {
       textBelow.innerText = "Your last guess was too low"
     } else {
       textBelow.innerText = "Your last guess was too high"
