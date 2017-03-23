@@ -131,9 +131,9 @@ function wrong() {
   textAbove.innerText = "Your last guess was"
 
   if (guess < randomNum) {
-    textBelow.innerText = "Your guess was too low"
+    textBelow.innerText = "Your last guess was too low"
   } else {
-    textBelow.innerText = "Your guess was too high"
+    textBelow.innerText = "Your last guess was too high"
   }
 }
 
@@ -201,7 +201,12 @@ function checkStatus() {
     disableButton(guessButton);
 
   } else {
-    textBelow.innerHTML = " ";
+    console.log("lastGuess is " + lastGuess.innerText)
+    if (parseNum(lastGuess.innerText) < randomNum) {
+      textBelow.innerText = "Your last guess was too low"
+    } else {
+      textBelow.innerText = "Your last guess was too high"
+    }
     enableButton(guessButton);
     alertTextOff()
   }
