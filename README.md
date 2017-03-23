@@ -1,4 +1,4 @@
-#Instructions on how to play!
+# Instructions on how to play!
 1. Enter your guess in the guess input box.
 2. Hit guess.
 3. The response will tell you if you're higher or lower than the answer.
