@@ -74,12 +74,9 @@ resetButton.addEventListener("click", function() {
 })
 
 
-
 // Global Functions
 function checkGuess(guess, randomNum) {
   lastGuess.textContent = guess
-  console.log("guess is " + guess)
-  console.log("random number is " + randomNum)
   if (guess === randomNum) {
     correct()
   } else {
@@ -201,7 +198,6 @@ function checkStatus() {
     disableButton(guessButton);
 
   } else {
-    console.log("lastGuess is " + lastGuess.innerText)
     if (tries == 0) {
       textBelow.innerText = " "
     } else if (parseNum(lastGuess.innerText) < randomNum) {
