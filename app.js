@@ -1,4 +1,4 @@
-textAbove// Variable Declarations
+// Variable Declarations
 var minNum = 1;
 var maxNum = 100;
 var guess;

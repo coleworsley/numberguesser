@@ -25,7 +25,9 @@ h1 {
   font-size: 60px;
 }
 
-#input, button, .min-max input {
+#input,
+button,
+.min-max input {
   font-size: inherit;
   font-weight: inherit;
   font-family: inherit;
@@ -53,7 +55,8 @@ h1 {
   font-size: 20px;
 }
 
-#min-input, #max-input {
+#min-input,
+#max-input {
   font-size: 20px;
   padding: 3px 7px;
   font-weight: inherit;
